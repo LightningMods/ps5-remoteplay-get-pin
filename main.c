@@ -204,6 +204,8 @@ int main()
         return -1;
     }
 
+    notifyf_printf("base64_account_id %s", base64_account_id);
+
     tracer_t tracer;
     if (tracer_init(&tracer, shellui_pid))
     {
