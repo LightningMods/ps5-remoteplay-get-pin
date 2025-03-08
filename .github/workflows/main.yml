@@ -17,7 +17,7 @@ jobs:
     steps:
 
     - name: Checkout
-      uses: actions/checkout@v3
+      uses: actions/checkout@main
 
     - name: Install dependencies
       run: |
@@ -40,7 +40,7 @@ jobs:
         subject-path: ./rp-get-pin.elf
 
     - name: Upload
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@main
       with:
         name: rp-get-pin
         path: ./rp-get-pin.elf
